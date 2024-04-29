@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamesAndGeek</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        .game:nth-child(odd) {
+            box-shadow: 0 0 10px #fff, 0 0 20px #4B0082, 0 0 40px #9370DB; /* Effet de néon violet pour les éléments impairs */
+        }
+
+        .game:nth-child(even) {
+            box-shadow: 0 0 10px #fff, 0 0 20px #483D8B, 0 0 40px #ADD8E6; /* Effet de néon bleu foncé pour les éléments pairs */
+        }
+
+        .game img {
+            max-width: 100%;
+            border-radius: 10px; /* Ajout de bordures rondes pour les images */
+        }
+
+        .game h3 {
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        .game p {
+            margin-bottom: 10px;
+        }
+
+        .game .price {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .game button {
+            background-color: #ffffff; /* Orange clair */
+            color: #000000;
+            padding: 10px 20px;
+            border: 2px solid #000000; /* Bordure de couleur noire */
+            border-radius: 20px; /* Bordures arrondies */
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .game button:hover {
+            background-color: #ff8519de; /* Changement de couleur au survol */
+        }
+
+        .game {
+            margin: 10px; /* Ajout de marges pour cadrer les cases */
+        }
+
+        header {
+            background-color: #F19A38; /* Couleur orange pour le header */
+            padding: 20px 0;
+            text-align: center;
+            color: #fff;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a.active {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./assets/logo-jeuvideoi-2.png" alt="Logo">
+        <img src="">
+        <h1>GameLab</h1>
+        <p>Réalisé par Enzo</p>
+        <nav>
+            <ul>
+                <li><a href="#accueil" class="active">Accueil</a></li>
+                <li><a href="#jeux">Jeux</a></li>
+                <li><a href="#evenements">Événements</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="jeux" class="featured-games">
+        <h2>Derniers Jeux</h2>
+        <div class="game">
+            <img src="game1.jpg" alt="Game 1">
+            <h3>The Legend of Zelda</h3>
+            <p>"The Legend of Zelda" est une série emblématique de jeux vidéo d'aventure développée par Nintendo. Dans ce jeu captivant, vous incarnez le courageux héros nommé Link, qui se lance dans des quêtes épiques pour sauver le royaume d'Hyrule et secourir la princesse Zelda des griffes du maléfique Ganon. 🎮
+
+                À travers des donjons mystérieux, des mondes vastes et variés, et des énigmes complexes, vous explorez un univers riche en personnages fascinants, en magie ancienne et en dangers redoutables. Chaque opus de la série offre une expérience unique, alliant exploration, combat, résolution de puzzles et narration immersive. 🏹✨
+                
+                Que ce soit en affrontant des ennemis redoutables, en découvrant des trésors cachés ou en aidant les habitants d'Hyrule dans leurs quêtes, "The Legend of Zelda" vous transporte dans un monde d'aventure, de mystère et de magie, où le courage et la détermination sont les clés de la victoire. 🗝️🌟</p>
+            <p class="price">$59.99</p> <!-- Changement de prix -->
+            <button class="btn">Acheter</button>
+        </div>
+        <div class="game">
+            <img src="game2.jpg" alt="Game 2"> <!-- Changement d'image -->
+            <h3>Fortnite</h3>
+            <p>"Fortnite" est un jeu de bataille en ligne développé par Epic Games, qui a captivé des millions de joueurs à travers le monde. Dans ce jeu palpitant, vous êtes parachuté sur une île avec 99 autres joueurs, et votre objectif ultime est d'être le dernier survivant. 🪂🎮
+
+                Que vous jouiez en solo, en duo ou en équipe, vous devez explorer l'île, collecter des ressources, construire des structures et affronter vos adversaires dans des combats intenses. Avec une variété d'armes, d'outils et de tactiques à votre disposition, chaque partie est une aventure unique, où la stratégie et les réflexes rapides sont essentiels. 🔫💥
+                
+                En plus du mode de jeu "Battle Royale", Fortnite propose également des modes de jeu créatifs, où les joueurs peuvent construire leurs propres mondes, ainsi que des événements spéciaux et des collaborations avec des marques célèbres, offrant une expérience de jeu toujours renouvelée et excitante. 🏰✨</p>
+            <p class="price">$34.99</p> <!-- Changement de prix -->
+            <button class="btn">Acheter</button>
+        </div>
+        <div class="game">
+            <img src="game3.jpg" alt="Game 3"> <!-- Changement d'image -->
+            <h3>Minecraft</h3>
+            <p>"Minecraft" est un jeu de construction et d'aventure qui permet aux joueurs de laisser libre cours à leur créativité dans un monde infini généré de manière procédurale. Dans ce jeu emblématique, vous commencez avec peu de ressources et devez collecter des blocs pour construire des structures, explorer des paysages variés et interagir avec diverses créatures. 🌍🔨
+
+                Que vous choisissiez de construire une maison simple, un château majestueux ou même une ville entière, les possibilités sont infinies dans Minecraft. Vous pouvez également plonger dans des donjons souterrains, affronter des monstres redoutables et découvrir des trésors cachés, ajoutant une dimension d'aventure à votre expérience de jeu. ⛏️👾
+                
+                En plus du mode de jeu standard, Minecraft propose une variété de modes de jeu, y compris le mode survie, le mode créatif et le mode multijoueur, offrant ainsi une expérience adaptée à tous les types de joueurs. Avec des mises à jour régulières et une communauté dynamique de créateurs de contenu, Minecraft continue de captiver les joueurs du monde entier depuis des années. 🎮🌟
+                </p>
+            <p class="price">$39.99</p> <!-- Changement de prix -->
+            <button class="btn">Acheter</button>
+        </div>
+        <div class="game">
+            <img src="game3.jpg" alt="Game 3"> <!-- Changement d'image -->
+            <h3>Splatoon 3</h3>
+            <p>"Splatoon 3" est un jeu de tir coloré et innovant où les joueurs incarnent des Inkling, des créatures mi-humaines mi-calamars, dans des affrontements multijoueurs pleins d'action. Dans ce jeu captivant, vous plongez dans des arènes dynamiques et colorées où l'objectif principal est de recouvrir le terrain de votre équipe de votre propre encre tout en éliminant vos adversaires. 🦑🎨
+
+                Avec son gameplay unique qui mélange des éléments de tir à la troisième personne avec des mécanismes de peinture, Splatoon 3 offre une expérience de jeu rafraîchissante et excitante. Vous pouvez personnaliser votre personnage, choisir parmi une variété d'armes et de gadgets spéciaux, et coopérer avec votre équipe pour dominer le champ de bataille. 🎮💥
+                
+                En plus du mode multijoueur compétitif, Splatoon 3 propose également un mode histoire solo immersif où vous explorez un monde post-apocalyptique rempli de mystères et de défis. Avec ses graphismes colorés et son gameplay addictif, Splatoon 3 promet d'offrir des heures de plaisir et d'excitation à tous les joueurs. 🌊🔫</p>
+            <p class="price">$55.99</p> <!-- Changement de prix -->
+            <button class="btn">Acheter</button>
+        </div>
+        <div class="game">
+            <img src="game3.jpg" alt="Game 3"> <!-- Changement d'image -->
+            <h3>GTA 6</h3>
+            <p>"GTA 6" est l'un des jeux vidéo les plus attendus de l'histoire du divertissement interactif. Dans ce jeu épique, les joueurs plongent dans un monde ouvert dynamique et immersif rempli d'action, d'aventure et de possibilités infinies. 🏙️🚗💰
+
+                Situé dans une version fictive et souvent satirique d'une ville inspirée des États-Unis, GTA 6 offre une liberté totale aux joueurs pour explorer, interagir et créer le chaos comme bon leur semble. Que vous choisissiez de suivre l'histoire principale, de participer à des activités secondaires ou de simplement vous promener dans la ville, chaque expérience dans GTA 6 est unique et pleine de surprises. 🎮🌟
+                
+                Dans ce jeu, les joueurs peuvent s'engager dans toutes sortes d'activités criminelles, de la conduite de voitures volées aux braquages de banques en passant par les fusillades épiques avec les forces de l'ordre. GTA 6 promet d'offrir une expérience de jeu immersive et palpitante, avec des graphismes à couper le souffle, un gameplay riche et une narration captivante. 🚓💥💼
+                
+                Avec son monde ouvert dynamique, ses personnages mémorables et son humour noir, GTA 6 s'annonce comme un chef-d'œuvre du divertissement interactif qui repoussera les limites de ce que les jeux vidéo peuvent offrir. Les fans du genre et les nouveaux venus dans la série peuvent s'attendre à une aventure épique qui les captivera pendant des heures. 🎮🌆🔥
+                </p>
+            <p class="price">$45.99</p> <!-- Changement de prix -->
+            <button class="btn">Acheter</button>
+        </div>
+        <!-- Ajoutez d'autres articles de la même manière -->
+    </section>
+
+    <section id="evenements">
+        <h2>Événements</h2>
+        <p>Restez à l'affût des prochains événements passionnants organisés par GamesAndGeek ! Consultez régulièrement cette section pour découvrir les dernières informations sur nos tournois, soirées à thème, rencontres de fans et bien plus encore. Nous avons toujours quelque chose de spécial à vous proposer pour enrichir votre expérience de jeu et vous permettre de vous immerger encore plus dans la culture geek. Ne manquez pas nos événements à venir ! 🎮✨
+            </p>
+    </section>
+
+    <section id="apropos">
+        <h2>À Propos</h2>
+        <p> Nous sommes plus qu'une simple boutique de jeux ; nous sommes une destination incontournable pour tous les passionnés de jeux et de culture geek. 🚀</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Vous pouvez nous contacter via nos réseaux sociaux :</p>
+        <ul>
+            <li><a href="https://www.instagram.com/gamesandgeek" target="_blank">Instagram</a></li>
+            <li><a href="https://twitter.com/gamesandgeek" target="_blank">Twitter</a></li>
+            <li><a href="https://discord.gg/gamesandgeek" target="_blank">Discord</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2024 GamesAndGeek</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
