@@ -101,4 +101,15 @@ const observer = new IntersectionObserver((entries, observer) => {
   elements.forEach(element => {
     observer.observe(element);
   });
+  document.getElementById('btnParametres').addEventListener('click', function() {
+    // Toggle entre le fond noir et blanc
+    if (document.body.style.backgroundColor === 'black') {
+        document.body.style.backgroundColor = 'white';
+        document.body.style.color = 'black'; // Texte noir pour contraster
+    } else {
+        document.body.style.backgroundColor = 'black';
+        document.body.style.color = 'white'; // Texte blanc pour contraster
+    }
+});
+
   

@@ -2,7 +2,7 @@
 
 /* Définition des couleurs gamer */
 :root {
-    --gamer-colors: rgba(255, 115, 0, 0.628), rgba(255, 0, 208, 0.742), rgba(217, 3, 255, 0.774), rgba(0, 81, 255, 0.728);
+    --gamer-colors: rgba(255, 140, 0, 0.879), rgba(255, 0, 208, 0.742), rgba(217, 3, 255, 0.774), rgba(0, 81, 255, 0.728);
 }
 
 /* Style du header avec bordures arrondies et couleur dégradée */
@@ -27,7 +27,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -40,12 +40,57 @@ nav ul li a.active {
     opacity: 0;
     transform: translateY(20px); /* Pour un effet de translation vers le haut */
     transition: opacity 0.5s ease, transform 0.5s ease;
-  }
-  
-  .game.visible {
+    width: 40%;
+
+}
+
+.game.visible {
     opacity: 1;
     transform: translateY(0);
-  }
-  .aligncenter{
+}
+
+.aligncenter {
     align-items: center;
-  }
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255); /* Changement de couleur du texte en blanc */
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.around{
+    justify-content: space-around;
+}
+.game1 {
+    margin: 10px;
+    transition: box-shadow 0.3s ease; /* Ajout de la transition pour l'effet de survol */
+}
+
+.game:hover {
+    box-shadow: 0 0 20px #ffffff, 0 0 40px #0033ff, 0 0 80px #ffffff; /* Effet de néon amélioré au survol */
+}
+.game2 {
+    margin: 10px;
+    transition: transform 0.3s ease; /* Ajout de la transition pour l'effet de survol */
+}
+
+.game:hover {
+    transform: translateY(-10px); /* Translation vers le haut au survol */
+}
+#btnParametres {
+    position: absolute;
+    top: 30px; /* Ajustez cette valeur selon vos besoins */
+    right: 20px;
+    transform: translateY(-50%);
+    background-color: rgb(0, 0, 0);
+    color: rgb(254, 254, 254);
+    border: none;
+    padding: 5px 10px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+

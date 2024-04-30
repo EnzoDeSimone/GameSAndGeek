@@ -7,12 +7,21 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
     <style>
+      /* Style pour le logo à gauche et réduit en taille */
+      header img {
+            float: left;
+            margin-right: 10px;
+            width: 80px; /* Largeur du logo */
+            height: auto; /* Hauteur automatique pour conserver les proportions */
+        }
+    </style>
+    <style>
         .game:nth-child(odd) {
             box-shadow: 0 0 10px #fff, 0 0 20px #4B0082, 0 0 40px #9370DB; /* Effet de néon violet pour les éléments impairs */
         }
 
         .game:nth-child(even) {
-            box-shadow: 0 0 10px #fff, 0 0 20px #483D8B, 0 0 40px #ADD8E6; /* Effet de néon bleu foncé pour les éléments pairs */
+            box-shadow: 0 0 10px #fff, 0 0 20px #4B0082, 0 0 40px #9370DB; /* Effet de néon bleu foncé pour les éléments pairs */
         }
 
         .game img {
@@ -31,14 +40,14 @@
 
         .game .price {
             font-weight: bold;
-            color: #333;
+            color: #9370DB;
         }
 
         .game button {
             background-color: #ffffff; /* Orange clair */
             color: #000000;
             padding: 10px 20px;
-            border: 2px solid #000000; /* Bordure de couleur noire */
+            border: 2px solid #ffffff; /* Bordure de couleur noire */
             border-radius: 20px; /* Bordures arrondies */
             cursor: pointer;
             font-size: 16px;
@@ -46,7 +55,7 @@
         }
 
         .game button:hover {
-            background-color: #ff8519de; /* Changement de couleur au survol */
+            background-color: #6f00ffde; /* Changement de couleur au survol */
         }
 
         .game {
@@ -92,8 +101,10 @@
     </style>
 </head>
 <body>
+    <button id="btnParametres" class="btn">☰</button>
     <header>
-        <img src="./assets/logo-jeuvideoi-2.png" alt="Logo">
+    <!-- Logo à gauche et réduit en taille -->
+    <img src="./assets/logo-jeuvideoi-2.png" alt="Logo">
         <img src="">
         <h1>GameLab</h1>
         <p>Réalisé par Enzo</p>
@@ -110,6 +121,7 @@
 
     <section id="jeux" class="featured-games">
         <h2>Derniers Jeux</h2>
+        <div class="flex around">
         <div class="game">
             <img src="game1.jpg" alt="Game 1">
             <h3>The Legend of Zelda</h3>
@@ -169,6 +181,7 @@
             <p class="price">$45.99</p> <!-- Changement de prix -->
             <button class="btn">Acheter</button>
         </div>
+        </div>
         <!-- Ajoutez d'autres articles de la même manière -->
     </section>
 
@@ -190,6 +203,7 @@
             <li><a href="https://www.instagram.com/gamesandgeek" target="_blank">Instagram</a></li>
             <li><a href="https://twitter.com/gamesandgeek" target="_blank">Twitter</a></li>
             <li><a href="https://discord.gg/gamesandgeek" target="_blank">Discord</a></li>
+            Créez votre propre jeu vidéo !
         </ul>
     </section>
 
