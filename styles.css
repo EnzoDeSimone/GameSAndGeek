@@ -70,7 +70,7 @@ body {
 }
 
 .game:hover {
-    box-shadow: 0 0 20px #ffffff, 0 0 40px #0033ff, 0 0 80px #ffffff; /* Effet de néon amélioré au survol */
+    box-shadow: 0 0 20px #ffffff, 0 0 80px #0022ff, 0 0 20px #ffffff; /* Effet de néon amélioré au survol */
 }
 .game2 {
     margin: 10px;
@@ -78,7 +78,7 @@ body {
 }
 
 .game:hover {
-    transform: translateY(-10px); /* Translation vers le haut au survol */
+    transform: translateY(-11px); /* Translation vers le haut au survol */
 }
 #btnParametres {
     position: absolute;
@@ -92,5 +92,10 @@ body {
     font-size: 24px;
     cursor: pointer;
     border-radius: 5px;
+}
+.game img {
+    max-width: 100%;
+    border-radius: 10px; /* Ajout de bordures rondes pour les images */
+    width: 400px; /* Nouvelle largeur des images */
 }
 
